@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -11,9 +10,6 @@
 }
 * {
   margin: 0;
-}
-html, body {
-  min-height: 100%;
 }
 
 body {
@@ -35,7 +31,6 @@ body {
   top: 44px;
   left: 29px;
   right: 29px;
-
 }
 img {
   padding-top: 28px;
@@ -46,7 +41,7 @@ img {
   padding: 0 0px 20px 17px;
 }
 .vehicle-description {
-  font-family: var(--lexend),arial;
+  font-family: var(--lexend),sans-serif;
   /* min-width: 200px; */
   /* width: 207px; */
   font-size: 18px;
@@ -99,19 +94,29 @@ img {
   color: var(--very-dark-cyan);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 748px) {
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     height: 479px;
     border-radius: 7px;
     overflow: hidden;
     align-items: center;
-   
+    position: relative;
+    max-width: 800px;
+    margin-inline:auto;
+    place-content: center;
+    top: auto;
+    left: auto;
+    right: auto;
   }
   .wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    max-height: 100vh;
     height: 100vh;
     background-color: var(--very-light-gray);
   }
@@ -119,7 +124,9 @@ img {
 .vehicle-description {
   padding-right: 42px;
   padding-bottom: 47px;
-  line-height: 2em;
+  
+  line-height: 29px;
+
 }
 .first, .second, .third {
   padding: 0 0px 20px 44px;
@@ -128,5 +135,27 @@ img {
 }
 .buttons {
   padding-bottom: 10px;
+  position:absolute;
+  bottom:22px;
 }
 }
+/* @media only screen and (min-width: 602px) and (max-width:745) {
+   .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 479px;
+    border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    /* max-width: 800px;
+    margin-inline:auto; */
+   
+  /* }
+  .buttons {
+    padding-bottom: 10px;
+    position:absolute;
+    bottom:22px;
+  }
+} */ 
