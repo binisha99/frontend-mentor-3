@@ -139,23 +139,3 @@ img {
   bottom:22px;
 }
 }
-/* @media only screen and (min-width: 602px) and (max-width:745) {
-   .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 479px;
-    border-radius: 7px;
-    overflow: hidden;
-    align-items: center;
-    position: relative;
-    /* max-width: 800px;
-    margin-inline:auto; */
-   
-  /* }
-  .buttons {
-    padding-bottom: 10px;
-    position:absolute;
-    bottom:22px;
-  }
-} */ 
